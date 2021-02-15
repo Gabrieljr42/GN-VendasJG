@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(216, 216, 216);
+    opacity: 90%;
+}
+
+.lista{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    text-align: center;
+}
+
+.produtos{
+    background-color: turquoise;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.cartao {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .preço {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .cartao button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+
+.liProduto{
+    width: 40%;
+    display: inline-table;
+    margin: 1%;
+}
+
+.ulProduto{
+    width: 100%;
+    list-style-type: none;
+    display: inline-table;
+    
+}
+
+.Imagem{
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+}

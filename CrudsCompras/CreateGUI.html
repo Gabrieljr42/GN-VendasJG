@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro produtos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/NavBar.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/CreateGUI.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../CSS/footer.css" media="screen" />
+    <script type="text/javascript" src="../JS/createGUI.js"></script>
+</head>
+<body>
+    <!-- NavBar -->
+    <div>
+        <ul class="ul">
+          <li class="li"><a  href="../Index.html"><img src="../Imagens/logo1.png" alt="PAGINA INICIAL" width="125" height="55"></a></li>
+          <li class="li"><a class="active"href="CreateGUI.html"><H1>ADICIONAR PRODUTOS</H1></a></li>
+          <li class="li"><a href="ReadGUI.php"><h1>COMPRAR PRODUTOS</h1></a></li>       
+        </ul>
+      </div>
+  <!-- HOME PAGE -->
+  <br>
+  <div class="top"><h1>VENDA SEU PRODUTO AQUI!!</h1><br><img src="../Imagens/logo.png" alt="GNVENDAS" width="150" height="150"></div>
+    <br>
+  <!-- Form para adicionar Produtos-->
+  <form action="CreateSQL.php" method="post" name="produtoForm"  enctype="multipart/form-data">
+    <div class="form-group produtoCreate">
+
+        <!-- Nome do Produto-->
+        <div style="width: 40%;">
+        <label for="nomeProduto">Nome do Produto :</label>
+        <input id="nomeInput" class="form-control"  placeholder="Insira um nome" name = "nomeProduto" required>
+        </div>
+        <small id="NomeLegenda" >O nome deve ter entre 2 e 150 caracteres</small>
+        <br>
+        <br>
+
+        <!-- Preço do produto-->
+        <div style="width: 40%;">
+        <label for="preçoProduto">Preço do Produto :</label>
+        <input type="number" step=".01" class="form-control" id="preçoInput"  placeholder="Insira um valor" name="preçoProduto" required>
+        </div>
+        <small id="NomeLegenda" >O preço deve ser maior ou igual a 5.00 reais</small>
+        <br>
+        <br> 
+        <input type="file" name="imgProduto" id="imgProduto" accept="image/x-png,image/gif,image/jpeg">
+        <br>
+        <br>
+        <!-- Botão de finalização -->
+        <div class="col-auto my-1">
+            <button type="submit" class="btn btn-primary">Salvar produto</button>
+          </div>
+      </div>
+</form>
+<!--Verifica a existência de error previamente feitos-->
+<script>urlTest()</script>
+<!-- Footer -->
+<div class="footer"><H1>GNVENDAS</H1></div>
+</body>
+</html>
